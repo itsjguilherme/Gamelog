@@ -11,7 +11,6 @@ struct GamePageView: View {
     var game: Game
     
     var body: some View {
-        NavigationStack{
             VStack {
                 List {
                     VStack(spacing: 18) {
@@ -113,8 +112,6 @@ struct GamePageView: View {
         }
         
     }
-    
-}
 
 #Preview {
     GamePageView(game: Game(name: "Stardew Valley", status: .played, review: "Muito legal", type: .physical, starRating: 3, gameDescription: "Isso é um jogo", genre: .casual
